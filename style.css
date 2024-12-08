@@ -1,0 +1,153 @@
+body {
+  background-color: blanchedalmond;
+  margin: 0;
+}
+#nav {
+  border-bottom: 1px solid black;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style-type: none;
+  width: 12rem;
+}
+a {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+#hero {
+  border-bottom: 1px solid black;
+  display: flex;
+}
+#heroDiv {
+  display: flex;
+}
+.heroDiv {
+  flex: 1;
+  border: 1px solid black;
+}
+#rightDiv-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+}
+#rightDiv-register {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+}
+/* Registration filed */
+#labelDiv {
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#fileds {
+  width: 25rem;
+  height: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#information-field {
+  border: 1px solid black;
+}
+#rightDivBtns {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+button:nth-child(1) {
+  grid-area: left;
+}
+
+button:nth-child(2) {
+  grid-area: left;
+}
+
+button:nth-child(3) {
+  grid-area: right;
+}
+/*Left Side Bar - Quiz Menu */
+#quiz-section {
+  display: flex;
+}
+#left-quiz-menu {
+  border: 1px solid black;
+}
+ol {
+  position: fixed;
+}
+ol ul {
+  display: flex;
+  flex-direction: column;
+}
+ol ul ul {
+  padding: 0px;
+  width: 10vw;
+  border: 1px solid black;
+}
+#btn-basics,
+#Conditionals,
+#Functions,
+#Arrays,
+#DOM,
+#Event,
+#Miscellaneous {
+  overflow: hidden;
+}
+#basic {
+  cursor: pointer;
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-60px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#btn-basics li {
+  transform: translateY(-60px);
+}
+
+#Conditionals li {
+  animation: slide-down 2s linear forwards;
+  transform: translateY(-60px);
+}
+
+#Functions li {
+  transform: translateY(-20px);
+}
+#Arrays li {
+  transform: translateY(0px);
+}
+#DOM li {
+  transform: translateY(0px);
+}
+#Event li {
+  transform: translateY(0px);
+}
+#Miscellaneous li {
+  transform: translateY(0px);
+}
